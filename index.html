@@ -1,8 +1,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Trivia Game</title>
-	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Airplane Trivia</title>
+
 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto" rel="stylesheet">
 
@@ -15,37 +15,55 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
 	<div class="fluid-container wrapper main-content">
-		<section class="quiz">
+		<h1>Airplane Trivia</h1>
+		<p id="txtPrompt">Think you know the friendly skies?</p>
+		<div class="btnRow">
+			<button id="strtBtn">Start Quiz!</button>
+			<div id="counter">1:00</div>
+		</div>
+		<div class="tally">
+			<div id="correct"></div>
+			<div id="wrong"></div>
+			<div id="unanswered"></div>
+		</div>
+			<div class="clearFix"></div>
+
+		<section> 
+			<img src="assets/images/LeslieNielsen.jpg">
+			<div class="quiz">
 			<fieldset>
 				<div class="quiz">
 					<div class="quizItem" id="item1">
-						<p>What was the world's first airline?</p>
+						<p class="ques">1. What was the world's first airline? </p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
 									<input type="radio" name="Q1" value="01" id="Q1A" class="QA">
-									A) KLM						
+									A) KLM			
+										<span class="reveal"></span>		
 								</label>
 							</li>
 							<li>
 								<label>
-									<input type="radio" name="Q1" value="02">				
+									<input class="wrong" type="radio" name="Q1" value="02">				
 									B) Qantas
 								</label>
 							</li>
 							<li>
 								<label>
-									<input type="radio" name="Q1" value="03">
+									<input class="wrong" type="radio" name="Q1" value="03">
 									C)  Pan Am					
 								</label>
 							</li>
 							<li>
 								<label>
-									<input type="radio" name="Q1" value="04">				
+									<input class="wrong" type="radio" name="Q1" value="04">				
 									D)  TWA						
 								</label>
 							</li>
@@ -53,268 +71,268 @@
 						</ul> <!--closes first ul -->
 					</div> <!-- closes item1 -->
 					<div class="quizItem" id="item2">
-						<p>What is the average number of people airborne per hour in the United States?</p>
+						<p class="ques">2. What is the average number of people airborne per hour in the United States?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q2" value="05">
+									<input class="wrong" type="radio" name="Q2" value="05">
 									A) 20,000					
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q2" value="06">
+									<input class="wrong" type="radio" name="Q2" value="06">
 									B) 40,000
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q2" value="07">
+									<input class="wrong" type="radio" name="Q2" value="07">
 									C) 60,000
 								</label>
 							</li>	
 							<li>
 								<label>
 									<input type="radio" name="Q2" value="08" id="Q2A" class="QA">
-									D) 70,000
+									D) 70,000<span class="reveal"></span>	
 								</label>
 							</li>	
 						</ul> <!-- closes item2 ul-->
 					</div> <!--closes item2 -->
 					<div class="quizItem" id="item3">
-						<p>About How much did American Airlines spend on in-flight meals in 2001?</p>
+						<p class="ques">3. About How much did American Airlines spend on in-flight meals in 2001?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q3" value="09">
+									<input class="wrong" type="radio" name="Q3" value="09">
 									A) $13 million				
 								</label>
 							</li>				
 							<li>
 								<label>
 									<input type="radio" name="Q3" value="10" id="Q3A" class="QA">
-									B) $150 million
+									B) $150 million<span class="reveal"></span>	
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q3" value="11">
+									<input class="wrong" type="radio" name="Q3" value="11">
 									C) $315 million
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q3" value="12">
+									<input class="wrong" type="radio" name="Q3" value="12">
 									D) $425 million
 								</label>
 							</li>	
 						</ul> <!-- closes item3 ul-->
 					</div> <!--closes item3 -->			
 					<div class="quizItem" id="item4">
-						<p>When was the hijacking of airplanes officially outlawed?</p>
+						<p class="ques">4. When was the hijacking of airplanes officially outlawed?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q4" value="13">
+									<input class="wrong" type="radio" name="Q4" value="13">
 									A) 1954			
 								</label>
 							</li>				
 							<li>
 								<label>
 									<input type="radio" name="Q4" value="14" id="Q4A" class="QA">
-									B) 1961
+									B) 1961<span class="reveal"></span>	
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q4" value="15">
+									<input class="wrong" type="radio" name="Q4" value="15">
 									C) 1972
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q4" value="16">
+									<input class="wrong" type="radio" name="Q4" value="16">
 									D) 1987
 								</label>
 							</li>	
 						</ul> <!-- closes item4 ul-->
 					</div> <!--closes item4 -->		
 					<div class="quizItem" id="item5">
-						<p>How much did it cost to ride in a barnstormer's airplane in the 1920's?</p>
+						<p class="ques">5. How much did it cost to ride in a barnstormer's airplane in the 1920's?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q5" value="17">
+									<input  class="wrong" type="radio" name="Q5" value="17">
 									A) Nothing			
 								</label>
 							</li>				
 							<li>
 								<label>
 									<input type="radio" name="Q5" value="18" id="Q5A" class="QA">
-									B) $1
+									B) $1<span class="reveal"></span>	
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q5" value="19">
+									<input class="wrong" type="radio" name="Q5" value="19">
 									C) $5
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q5" value="20">
+									<input class="wrong" type="radio" name="Q5" value="20">
 									D) $10
 								</label>
 							</li>	
 						</ul> <!-- closes item5 ul-->
 					</div> <!--closes item5 -->
 					<div class="quizItem" id="item6">
-						<p>How did American Airlines cut their costs by nearly $40,000 in 1987?</p>
+						<p class="ques">6. How did American Airlines cut their costs by nearly $40,000 in 1987?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q6" value="21">
+									<input class="wrong" type="radio" name="Q6" value="21">
 									A)  Cutting the length of time it took to explain safety procedures	
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q6" value="22">
+									<input class="wrong" type="radio" name="Q6" value="22">
 									B)  Using cheaper microphones for the cockpit						
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q6" value="23">
+									<input class="wrong" type="radio" name="Q6" value="23">
 									C)  Using paper cups for in-flight drinks
 								</label>
 							</li>	
 							<li>
 								<label>
 									<input type="radio" name="Q6" value="24" id="Q6A" class="QA">
-									D)  Eliminating an olive from each salad served in-flight
+									D)  Eliminating an olive from each salad served in-flight<span class="reveal"></span>	
 								</label>
 							</li>	
 						</ul> <!-- closes item6 ul-->
 					</div> <!--closes item6 -->
 					<div class="quizItem" id="item7">
-						<p>What is the world's busiest airport?</p>
+						<p class="ques">7. What is the world's busiest airport?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
 									<input type="radio" name="Q7" value="25" id="Q7A" class="QA">
-									A)  Hartsfield
+									A)  Hartsfield<span class="reveal"></span>	
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q7" value="26">
+									<input class="wrong" type="radio" name="Q7" value="26">
 									B)  Heathrow				
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q7" value="27">
+									<input class="wrong" type="radio" name="Q7" value="27">
 									C)  JFK
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q7" value="28">
+									<input class="wrong" type="radio" name="Q7" value="28">
 									D)  Los Angeles International Airport
 								</label>
 							</li>	
 						</ul> <!-- closes item7 ul-->
 					</div> <!--closes item7 -->
 					<div class="quizItem" id="item8">
-						<p>Which was NOT a requirement for the first female flight attendants in 1930?</p>
+						<p class="ques">8. Which was NOT a requirement for the first female flight attendants in 1930?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
-									<input type="radio" name="Q8" value="29">
+									<input class="wrong" type="radio" name="Q8" value="29">
 									A)  Must weigh no more than 115 pounds
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q8" value="30">
+									<input class="wrong" type="radio" name="Q8" value="30">
 									B)  Must be nurses
 								</label>
 							</li>	
 							<li>
 								<label>
 									<input type="radio" name="Q8" value="31" id="Q8A" class="QA">
-									C)  Must be able to hold their breath for a least 60 seconds
+									C)  Must be able to hold their breath for a least 60 seconds<span class="reveal"></span>	
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q8" value="32">
+									<input class="wrong" type="radio" name="Q8" value="32">
 									D)  Must be unmarried
 								</label>
 							</li>	
 						</ul> <!-- closes item8 ul-->
 					</div> <!--closes item8 -->
 					<div class="quizItem" id="item9">
-						<p>British Airways passengers consume approximately 6 tons of what per year?</p>
+						<p class="ques">9. British Airways passengers consume approximately 6 tons of what per year?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
 									<input type="radio" name="Q9" value="33" id="Q9A" class="QA">
-									A)  Caviar
+									A)  Caviar<span class="reveal"></span>	
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q9" value="34">
+									<input class="wrong" type="radio" name="Q9" value="34">
 									B)  Smoked salmon
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q9" value="35">
+									<input class="wrong" type="radio" name="Q9" value="35">
 									C)  Chocolate
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q9" value="36">
+									<input class="wrong" type="radio" name="Q9" value="36">
 									D)  Chicken
 								</label>
 							</li>	
 						</ul> <!-- closes item9 ul-->
 					</div> <!--closes item9 -->
 					<div class="quizItem" id="item10">
-						<p>What words do the initials ORD (for Chicago O'Hare) stand for?</p>
+						<p class="ques">10. What words do the initials ORD (for Chicago O'Hare) stand for?</p>
 						<ul style="list-style: none;">
 							<li>
 								<label>
 									<input type="radio" name="Q10" value="37" id="Q10A" class="QA">
-									A)  Orchard Field
+									A)  Orchard Field<span class="reveal"></span>	
 								</label>
 							</li>				
 							<li>
 								<label>
-									<input type="radio" name="Q10" value="38">
+									<input class="wrong" type="radio" name="Q10" value="38">
 									B)  Overland
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q10" value="39">
+									<input class="wrong" type="radio" name="Q10" value="39">
 									C)  Older River Run
 								</label>
 							</li>	
 							<li>
 								<label>
-									<input type="radio" name="Q10" value="40">
+									<input class="wrong" type="radio" name="Q10" value="40">
 									D)  Ordination
 								</label>
 							</li>	
 						</ul> <!-- closes item10 ul-->
 					</div> <!--closes item10 -->
 				</div> <!--closes quiz-->
-				<button>SUBMIT</button>
+				<div class="buhbye">Thank you for flying with us, buh bye!</div>
 			</fieldset>
 		</section> <!--closes section class-->
 	</div> <!--closes fluid-container wrapper main-conten-->
